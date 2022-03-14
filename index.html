@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let a = "carro";
+        let b = 1;
+        const c = "casa";
+
+        function clickNoBotao() {
+            alert("Olá, mundo!");
+        }
+
+        function atualizacaoTexto(){
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
+            p.textContent = input.value;
+            console.log("Oi");
+        }
+    </script>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Titulo</h1>
+        <h2>Titulo</h2>
+        <p id="para">paragrafo</p>
+        <span>informação</span>
+    </div>
+    <img src="" alt="">
+    <a href="https://google.com.br">link para o google</a>
+    <div>
+        <input id="meuinput" type="text" oninput="atualizacaoTexto()">
+        <select name="" id="">
+            <option value="">Opção 1</option>
+        </select>
+        <button onclick="clickNoBotao()">Botão</button>
+    </div>
+
 </body>
+
 </html>
