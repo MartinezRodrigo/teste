@@ -15,13 +15,41 @@
             alert("Olá, mundo!");
         }
 
-        function atualizacaoTexto(){
+        function atualizacaoTexto() {
             let input = document.getElementById("meuinput");
             let p = document.getElementById("para");
             p.textContent = input.value;
             console.log("Oi");
         }
     </script>
+
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        h1 {
+            font-family: Tahoma;
+            color: gray;
+            font-size: 32;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border: solid 1px black;
+            padding: 2px;
+
+        }
+
+        .margem-minima {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,13 +59,19 @@
         <p id="para">paragrafo</p>
         <span>informação</span>
     </div>
-    <img src="" alt="">
-    <a href="https://google.com.br">link para o google</a>
-    <div>
+    <img src="olho.jpg" alt="">
+    <div class="margem-minima">
+        <a href="https://google.com.br">link para o google</a>
+    </div>
+    <div class="margem-minima">
         <input id="meuinput" type="text" oninput="atualizacaoTexto()">
+    </div>
+    <div class="margem-minima">
         <select name="" id="">
             <option value="">Opção 1</option>
         </select>
+    </div>
+    <div class="margem-minima">
         <button onclick="clickNoBotao()">Botão</button>
     </div>
 
