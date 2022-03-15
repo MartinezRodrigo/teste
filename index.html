@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Teste</title>
     <script>
         let a = "carro";
         let b = 1;
@@ -26,11 +26,25 @@
     <style>
         body {
             background-color: #eee;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(68, 155, 255);
+        }
+
+        .header #lista {
+            display: flex;
+            justify-content: left;
+            align-items: center;
         }
 
         h1 {
             font-family: Tahoma;
-            color: gray;
+            color: rgb(255, 255, 255);
             font-size: 32;
         }
 
@@ -49,48 +63,84 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+
+        .footer {
+            height: 15vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(68, 155, 255);
+        }
+
+        .footer p {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
     </style>
 </head>
+<header class="header">
+    <h1>Página de Teste</h1>
+    <nav id="lista">
+        <ul>
+            <li>Home</li>
+            <li>Formulário</li>
+        </ul>
+    </nav>
+</header>
 
 <body>
-    <div>
-        <h1>Titulo</h1>
-        <h2>Titulo</h2>
-        <p id="para">paragrafo</p>
-        <span>informação</span>
-    </div>
-    <img src="olho.jpg" alt="">
-    <div class="margem-minima">
-        <a href="https://google.com.br">link para o google</a>
-    </div>
-    <div class="margem-minima">
-        <input id="meuinput" type="text" oninput="atualizacaoTexto()">
-    </div>
-    <div class="margem-minima">
-        <select name="" id="">
-            <option value="">Opção 1</option>
-        </select>
-    </div>
-    <div class="margem-minima">
-        <button onclick="clickNoBotao()">Botão</button>
-    </div>
-    <div>
-        <video controls>
-            <source src="https://www.youtube.com/watch?v=p3pSAeANb7U" type="Video">  
-            Seu navegador não possui suporte para video.  
-        </video>
-    </div>
-    <div>
-        <audio controls>
-            <source src="https://www.youtube.com/watch?v=qtwot6j83V8" type="Audio youtube">
-            Seu navegador não possui suporte para audio.
-        </audio>
-    </div>
-    <div>
-        <iframe src="https://www.homehost.com.br" frameborder="0">
-            Seu navegador não possui suporte para Iframes.
-        </iframe>
-    </div>
+    <section class="texto">
+        <div>
+
+            <h2>Titulo</h2>
+            <p id="para">paragrafo</p>
+            <span>informação</span>
+        </div>
+    </section>
+    <img src="olho.jpg" alt="Imagem de um olho colorido">
+    <section class="multimidia">
+        <div class="margem-minima">
+            <a href="https://google.com.br">link para o google</a>
+        </div>
+        <div class="margem-minima">
+            <input id="meuinput" type="text" oninput="atualizacaoTexto()">
+        </div>
+        <div class="margem-minima">
+            <select name="" id="">
+                <option value="">Opção 1</option>
+            </select>
+        </div>
+        <div class="margem-minima">
+            <button onclick="clickNoBotao()">Botão</button>
+        </div>
+        <div>
+            <video controls>
+                <source src="https://www.youtube.com/watch?v=p3pSAeANb7U" type="Video">
+                Seu navegador não possui suporte para video.
+            </video>
+        </div>
+        <div>
+            <audio controls>
+                <source src="https://www.youtube.com/watch?v=qtwot6j83V8" type="Audio youtube">
+                Seu navegador não possui suporte para audio.
+            </audio>
+        </div>
+        <div>
+            <iframe src="https://www.homehost.com.br" frameborder="0">
+                Seu navegador não possui suporte para Iframes.
+            </iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Inscreva-se para receber noticias</p>
+        <form method="post">
+            <input type="text" name="nome" placeholder="Digite o seu nome">
+            <input type="email" name="email" placeholder="Digite o seu email">
+            <input type="submit" name="enviar" value="Enviar">
+        </form>
+    </footer>
 
 </body>
 
